@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Data-Structure-Practices" />
+        <module name="0.Array" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Data-Structure-Practices" target="1.7" />
+      <module name="0.Array" target="1.7" />
+      <module name="Data-Structure-Practices" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
