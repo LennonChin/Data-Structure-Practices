@@ -10,21 +10,21 @@ public class ArrayTest {
 
     @Before
     public void init() {
-        array = new Array<Integer>(20);
+        array = new Array<Integer>();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 16; i++) {
             array.addLast(i);
         }
     }
 
     @Test
     public void getSize() throws Exception {
-        Assert.assertEquals(array.getSize(), 10);
+        Assert.assertEquals(array.getSize(), 16);
     }
 
     @Test
     public void getCapacity() throws Exception {
-        Assert.assertEquals(array.getCapacity(), 20);
+        Assert.assertEquals(array.getCapacity(), 16);
     }
 
     @Test
@@ -94,7 +94,7 @@ public class ArrayTest {
     public void removeLast() throws Exception {
         array.removeLast();
         long result = (long)array.get(array.getSize() - 1);
-        Assert.assertEquals(result, 8);
+        Assert.assertEquals(result, 14);
     }
 
     @Test
@@ -102,6 +102,20 @@ public class ArrayTest {
         array.removeElement(6);
         long result = (long)array.get(6);
         Assert.assertNotEquals(result, 6);
+    }
+
+    @Test
+    public void resize() {
+        for (int i = 0; i < 8; i++) {
+            array.removeLast();
+        }
+        // 已减容
+        Assert.assertEquals(array.getCapacity(), 8);
+        for (int i = 0; i < 8; i++) {
+            array.addLast(i);
+        }
+        // 已减容
+        Assert.assertEquals(array.getCapacity(), 16);
     }
 
 }

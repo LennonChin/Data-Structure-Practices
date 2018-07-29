@@ -27,7 +27,7 @@ public class Array<T> {
      * 默认构造，初始容量为10
      */
     public Array() {
-        this(10);
+        this(16);
     }
 
     /**
@@ -84,11 +84,11 @@ public class Array<T> {
      * @param e
      */
     public void add(int index, T e) {
-        if (size == data.length) {
-            throw new IllegalArgumentException("添加失败，数组容量已满");
-        }
         if (index < 0 || index > size) {
             throw new IllegalArgumentException("添加失败，index范围应为[0, size]");
+        }
+        if (size == data.length) {
+            resize(data.length * 2);
         }
 
         // 移动元素，从后往前逐个移动
@@ -99,6 +99,18 @@ public class Array<T> {
         data[index] = e;
         // 更改大小
         size++;
+    }
+
+    /**
+     * 扩容
+     * @param newCapacity
+     */
+    private void resize(int newCapacity) {
+        T[] newData = (T[])new Object[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newData[i] = data[i];
+        }
+        data = newData;
     }
 
     /**
@@ -178,6 +190,10 @@ public class Array<T> {
         size--;
         // 删除无用元素引用 loitering objects
         data[size] = null;
+        // 如果元素个数小于容量的一半，则减小容量
+        if (size == data.length / 2) {
+            resize(data.length / 2);
+        }
         return oldE;
     }
 
