@@ -190,8 +190,12 @@ public class Array<T> {
         size--;
         // 删除无用元素引用 loitering objects
         data[size] = null;
-        // 如果元素个数小于容量的一半，则减小容量
-        if (size == data.length / 2) {
+        /**
+         * 如果元素个数小于容量的四分之一，则减小容量为一半
+         * 为了防止复杂度震荡，将减容的情况进行lazy化
+         * 复杂度震荡情况出现的场景：当数组已满时，频繁切换调用add和remove操作会导致频繁的扩容和减容，导致复杂度震荡
+         */
+        if (size == data.length / 4 && data.length / 2 != 0) {
             resize(data.length / 2);
         }
         return oldE;
