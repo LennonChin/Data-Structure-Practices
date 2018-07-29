@@ -1,17 +1,16 @@
 package com.coderap;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class ArrayTest {
 
-    private Array array;
+    private Array<Integer> array;
 
     @Before
     public void init() {
-        array = new Array(20);
+        array = new Array<Integer>(20);
 
         for (int i = 0; i < 10; i++) {
             array.addLast(i);
@@ -20,80 +19,89 @@ public class ArrayTest {
 
     @Test
     public void getSize() throws Exception {
-        System.out.println(array.getSize());
+        Assert.assertEquals(array.getSize(), 10);
     }
 
     @Test
     public void getCapacity() throws Exception {
-        System.out.println(array.getCapacity());
+        Assert.assertEquals(array.getCapacity(), 20);
     }
 
     @Test
     public void isEmpty() throws Exception {
-        System.out.println(array.isEmpty());
+        Assert.assertEquals(array.isEmpty(), false);
     }
 
     @Test
     public void addLast() throws Exception {
         array.addLast(200);
-        System.out.println(array);
+        long result = (long)array.get(array.getSize() - 1);
+        Assert.assertEquals(result, 200);
     }
 
     @Test
     public void addFirst() throws Exception {
         array.addFirst(-1);
-        System.out.println(array);
+        long result = (long)array.get(0);
+        Assert.assertEquals(result, -1);
     }
 
     @Test
     public void add() throws Exception {
         array.add(2, 100);
-        System.out.println(array);
+        long result = (long)array.get(2);
+        Assert.assertEquals(result, 100);
     }
 
     @Test
     public void get() throws Exception {
-        System.out.println(array.get(4));
+        long result = (long)array.get(4);
+        Assert.assertEquals(result, 4);
     }
 
     @Test
     public void set() throws Exception {
         array.set(5, 120);
-        System.out.println(array);
+        long result = (long)array.get(5);
+        Assert.assertEquals(result, 120);
     }
 
     @Test
     public void contains() throws Exception {
-        System.out.println(array.contains(120));
+        Assert.assertEquals(array.contains(8), true);
     }
 
     @Test
     public void find() throws Exception {
-        System.out.println(array.find(120));
+        long result = (long)array.find(6);
+        Assert.assertNotEquals(result, -1);
     }
 
     @Test
     public void remove() throws Exception {
-        array.remove(4);
-        System.out.println(array);
+        long result = (long)array.remove(4);
+        Assert.assertEquals(result, 4);
     }
 
     @Test
     public void removeFirst() throws Exception {
         array.removeFirst();
-        System.out.println(array);
+        long result = (long)array.get(0);
+        Assert.assertEquals(result, 1);
     }
 
     @Test
     public void removeLast() throws Exception {
         array.removeLast();
-        System.out.println(array);
+        long result = (long)array.get(array.getSize() - 1);
+        Assert.assertEquals(result, 8);
     }
 
     @Test
     public void removeElement() throws Exception {
         array.removeElement(6);
-        System.out.println(array);
+        long result = (long)array.get(6);
+        Assert.assertNotEquals(result, 6);
     }
 
 }

@@ -6,10 +6,10 @@ package com.coderap;
  * @author: Lennon Chin
  * @create: 2018/07/29 12:11:43
  */
-public class Array {
+public class Array<T> {
 
     // 装载数据的数组
-    private int[] data;
+    private T[] data;
     // 当前元素数量
     private int size;
 
@@ -19,7 +19,7 @@ public class Array {
      * @param capacity 初始容量
      */
     public Array(int capacity) {
-        data = new int[capacity];
+        data = (T[]) new Object[capacity];
         size = 0;
     }
 
@@ -62,7 +62,7 @@ public class Array {
      *
      * @param e
      */
-    public void addLast(int e) {
+    public void addLast(T e) {
         // 即在size的位置添加一个位置
         add(size, e);
     }
@@ -72,7 +72,7 @@ public class Array {
      *
      * @param e
      */
-    public void addFirst(int e) {
+    public void addFirst(T e) {
         // 即在0的位置添加一个位置
         add(0, e);
     }
@@ -83,7 +83,7 @@ public class Array {
      * @param index
      * @param e
      */
-    public void add(int index, int e) {
+    public void add(int index, T e) {
         if (size == data.length) {
             throw new IllegalArgumentException("添加失败，数组容量已满");
         }
@@ -107,7 +107,7 @@ public class Array {
      * @param index
      * @return
      */
-    public int get(int index) {
+    public T get(int index) {
         if (index < 0 || index >= size) {
             throw new IllegalArgumentException("获取失败，index范围应为[0, size - 1]");
         }
@@ -121,11 +121,11 @@ public class Array {
      * @param e
      * @return
      */
-    public int set(int index, int e) {
+    public T set(int index, T e) {
         if (index < 0 || index >= size) {
             throw new IllegalArgumentException("设置失败，index范围应为[0, size - 1]");
         }
-        int oldE = data[index];
+        T oldE = data[index];
         data[index] = e;
         return oldE;
     }
@@ -136,9 +136,9 @@ public class Array {
      * @param e
      * @return
      */
-    public boolean contains(int e) {
+    public boolean contains(T e) {
         for (int i = 0; i < size; i++) {
-            if (data[i] == e) {
+            if (data[i].equals(e)) {
                 return true;
             }
         }
@@ -151,9 +151,9 @@ public class Array {
      * @param e
      * @return
      */
-    public int find(int e) {
+    public int find(T e) {
         for (int i = 0; i < size; i++) {
-            if (data[i] == e) {
+            if (data[i].equals(e)) {
                 return i;
             }
         }
@@ -166,40 +166,45 @@ public class Array {
      * @param index
      * @return
      */
-    public int remove(int index) {
+    public T remove(int index) {
         if (index < 0 || index >= size) {
             throw new IllegalArgumentException("删除失败，index范围应为[0, size - 1]");
         }
-        int oldE = data[index];
+        T oldE = data[index];
         // 逐个前移，从前向后的顺序
         for (int i = index + 1; i < size; i++) {
             data[i - 1] = data[i];
         }
         size--;
+        // 删除无用元素引用 loitering objects
+        data[size] = null;
         return oldE;
     }
 
     /**
      * 删除第一个元素
+     *
      * @return
      */
-    public int removeFirst() {
+    public T removeFirst() {
         return remove(0);
     }
 
     /**
      * 删除最后一个元素
+     *
      * @return
      */
-    public int removeLast() {
+    public T removeLast() {
         return remove(size - 1);
     }
 
     /**
      * 删除某个元素
+     *
      * @param e
      */
-    public void removeElement(int e) {
+    public void removeElement(T e) {
         int index = find(e);
         if (index != -1) {
             remove(index);
