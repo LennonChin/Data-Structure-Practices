@@ -127,6 +127,22 @@ public class Array<T> {
     }
 
     /**
+     * 获取最后一个元素
+     * @return
+     */
+    public T getLast() {
+        return get(size - 1);
+    }
+
+    /**
+     * 获取第一个元素
+     * @return
+     */
+    public T getFirst() {
+        return get(0);
+    }
+
+    /**
      * 改变某个索引的元素，会返回原来该位置上的元素
      *
      * @param index

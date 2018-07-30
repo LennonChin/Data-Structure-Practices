@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>0.Array</module>
+        <module>1.Stack</module>
     </modules>
 
     <name>Data-Structure-Practices</name>

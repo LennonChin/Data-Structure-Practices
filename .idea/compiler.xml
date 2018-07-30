@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="0.Array" />
+        <module name="1.Stack" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="0.Array" target="1.7" />
+      <module name="0.Array" target="1.8" />
+      <module name="1.Stack" target="1.8" />
       <module name="Data-Structure-Practices" target="1.8" />
     </bytecodeTargetLevel>
   </component>

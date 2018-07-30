@@ -106,15 +106,15 @@ public class ArrayTest {
 
     @Test
     public void resize() {
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 12; i++) {
             array.removeLast();
         }
         // 已减容
         Assert.assertEquals(array.getCapacity(), 8);
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 5; i++) {
             array.addLast(i);
         }
-        // 已减容
+        // 已扩容
         Assert.assertEquals(array.getCapacity(), 16);
     }
 
