@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="0.Array" />
         <module name="1.Stack" />
+        <module name="2.Queue" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="0.Array" target="1.8" />
       <module name="1.Stack" target="1.8" />
+      <module name="2.Queue" target="1.8" />
       <module name="Data-Structure-Practices" target="1.8" />
     </bytecodeTargetLevel>
   </component>

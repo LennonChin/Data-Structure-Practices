@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/0.Array/0.Array.iml" filepath="$PROJECT_DIR$/0.Array/0.Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/1.Stack/1.Stack.iml" filepath="$PROJECT_DIR$/1.Stack/1.Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.Queue/2.Queue.iml" filepath="$PROJECT_DIR$/2.Queue/2.Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data-Structure-Practices.iml" filepath="$PROJECT_DIR$/Data-Structure-Practices.iml" />
     </modules>
   </component>
