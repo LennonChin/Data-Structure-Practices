@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.coderap.ArrayTest" time="0.027" tests="15" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.coderap.ArrayTest" time="0.03" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Java\jdk1.8.0_144\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\limyr\AppData\Local\Temp\surefire1082049619762653480\surefirebooter8481631225422484641.jar C:\Users\limyr\AppData\Local\Temp\surefire1082049619762653480 2018-07-30T21-16-20_173-jvmRun1 surefire6791374781643157790tmp surefire_05441462632020481093tmp"/>
+    <property name="sun.java.command" value="C:\Users\limyr\AppData\Local\Temp\surefire3890289221066869406\surefirebooter2661270347768318781.jar C:\Users\limyr\AppData\Local\Temp\surefire3890289221066869406 2018-07-31T22-44-48_026-jvmRun1 surefire911532516249990069tmp surefire_0948067031668325471tmp"/>
     <property name="surefire.test.class.path" value="D:\WorkSpace\Idea\Data-Structure-Practices\0.Array\target\test-classes;D:\WorkSpace\Idea\Data-Structure-Practices\0.Array\target\classes;D:\Maven-Repository\junit\junit\4.11\junit-4.11.jar;D:\Maven-Repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\limyr"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\limyr\AppData\Local\Temp\surefire1082049619762653480\surefirebooter8481631225422484641.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\limyr\AppData\Local\Temp\surefire3890289221066869406\surefirebooter2661270347768318781.jar"/>
     <property name="sun.boot.class.path" value="C:\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Java\jdk1.8.0_144\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -69,7 +69,7 @@
   <testcase name="removeElement" classname="com.coderap.ArrayTest" time="0"/>
   <testcase name="removeFirst" classname="com.coderap.ArrayTest" time="0"/>
   <testcase name="getSize" classname="com.coderap.ArrayTest" time="0"/>
-  <testcase name="add" classname="com.coderap.ArrayTest" time="0"/>
+  <testcase name="add" classname="com.coderap.ArrayTest" time="0.001"/>
   <testcase name="get" classname="com.coderap.ArrayTest" time="0"/>
   <testcase name="set" classname="com.coderap.ArrayTest" time="0"/>
   <testcase name="find" classname="com.coderap.ArrayTest" time="0"/>
