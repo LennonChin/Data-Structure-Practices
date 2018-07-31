@@ -15,8 +15,8 @@ public class LoopQueueTest {
         loopQueue = new LoopQueue<>();
         for (int i = 0; i < 5; i++) {
             loopQueue.enqueue(i);
-            System.out.println(loopQueue);
         }
+        System.out.println(loopQueue);
     }
 
     @Test

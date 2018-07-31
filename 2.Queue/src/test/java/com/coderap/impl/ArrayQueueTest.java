@@ -15,8 +15,8 @@ public class ArrayQueueTest {
         arrayQueue = new ArrayQueue<>();
         for (int i = 0; i < 5; i++) {
             arrayQueue.enqueue(i);
-            System.out.println(arrayQueue);
         }
+        System.out.println(arrayQueue);
     }
 
     @Test
