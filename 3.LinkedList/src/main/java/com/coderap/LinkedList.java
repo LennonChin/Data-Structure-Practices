@@ -30,11 +30,11 @@ public class LinkedList<T> {
         }
     }
 
-    private Node head;
+    private Node dummyhead;
     private int size;
 
     public LinkedList() {
-        head = null;
+        dummyhead = new Node(null, null);
         size = 0;
     }
 
@@ -55,22 +55,6 @@ public class LinkedList<T> {
     }
 
     /**
-     * 添加元素到链表头
-     * @param e
-     */
-    public void addFirst(T e) {
-//        Node node = new Node(e);
-//        node.next = head;
-//        head = node;
-        /**
-         * 一行代码可以实现上面三行代码
-         * 即创建一个新节点，将新节点的next指向head节点，然后将head指向新节点
-         */
-        head = new Node(e, head);
-        size++;
-    }
-
-    /**
      * 在链表的索引位添加一个元素
      * @param index
      * @param e
@@ -79,23 +63,27 @@ public class LinkedList<T> {
         if (index < 0 || index > size) {
             throw new IllegalArgumentException("不合法的index，index应该在[0, size]");
         }
-        if (index == 0) {
-            addFirst(e);
-        } else {
-            Node preNode = head;
-            for (int i = 0; i < index - 1; i++) {
-                preNode = preNode.next;
-            }
+        Node preNode = dummyhead;
+        for (int i = 0; i < index; i++) {
+            preNode = preNode.next;
+        }
 //            Node node = new Node(e);
 //            node.next = preNode.next;
 //            preNode.next = node;
-            /**
-             * 一行代码可以实现上面三行代码
-             * 即创建一个新节点，将新节点的next指向prevNode.next节点，然后将prevNode.next指向新节点
-             */
-            preNode.next = new Node(e, preNode.next);
-            size++;
-        }
+        /**
+         * 一行代码可以实现上面三行代码
+         * 即创建一个新节点，将新节点的next指向prevNode.next节点，然后将prevNode.next指向新节点
+         */
+        preNode.next = new Node(e, preNode.next);
+        size++;
+    }
+
+    /**
+     * 添加元素到链表头
+     * @param e
+     */
+    public void addFirst(T e) {
+        add(0 ,e);
     }
 
     /**
