@@ -26,7 +26,7 @@ public class LinkedList<T> {
 
         @Override
         public String toString() {
-            return "Node: [" + "e=" + e + ", next=" + next + ']';
+            return "[Node: " + e + "]";
         }
     }
 
@@ -92,5 +92,125 @@ public class LinkedList<T> {
      */
     public void addLast(T e) {
         add(size ,e);
+    }
+
+    /**
+     * 获取某索引位置的元素
+     * @param index
+     * @return
+     */
+    public T get(int index) {
+        if (index < 0 || index > size) {
+            throw new IllegalArgumentException("不合法的index，index应该在[0, size]");
+        }
+        Node currnetNode = dummyhead.next;
+        for (int i = 0; i < index; i++) {
+            currnetNode = currnetNode.next;
+        }
+        return currnetNode.e;
+    }
+
+    /**
+     * 获取链表第一个元素
+     * @return
+     */
+    public T getFirst() {
+        return get(0);
+    }
+
+    /**
+     * 获取链表最后一个元素
+     * @return
+     */
+    public T getLast() {
+        return get(size - 1);
+    }
+
+    /**
+     * 设置某个索引上的元素
+     * @param index
+     * @param e
+     */
+    public void set(int index, T e) {
+        if (index < 0 || index > size) {
+            throw new IllegalArgumentException("不合法的index，index应该在[0, size]");
+        }
+        Node currnetNode = dummyhead.next;
+        for (int i = 0; i < index; i++) {
+            currnetNode = currnetNode.next;
+        }
+        currnetNode.e = e;
+    }
+
+    /**
+     * 查找链表中是否包含有元素e
+     * @param e
+     * @return
+     */
+    public boolean contains(T e) {
+
+        Node currentNode = dummyhead.next;
+        while (currentNode != null) {
+            if (currentNode.e.equals(e)) {
+                return true;
+            }
+            currentNode = currentNode.next;
+        }
+        return false;
+    }
+
+    /**
+     * 删除某个索引位上的元素
+     * @param index
+     * @return
+     */
+    public T remove(int index) {
+        if (index < 0 || index > size) {
+            throw new IllegalArgumentException("不合法的index，index应该在[0, size]");
+        }
+        /**
+         * 1. 找到要删除节点的前一个节点preNode
+         * 2. 记录preNode的next为要删除的节点deletedNode
+         * 3. 将preNode节点的next指向deletedNode的next
+         * 4. 将deletedNode的next置为空
+         */
+        Node preNode = dummyhead;
+        for (int i = 0; i < index; i++) {
+            preNode = preNode.next;
+        }
+        Node deletedNode = preNode.next;
+        preNode.next = deletedNode.next;
+        deletedNode.next = null;
+        size--;
+        return deletedNode.e;
+    }
+
+    /**
+     * 删除第一个元素
+     * @return
+     */
+    public T removeFirst() {
+        return remove(0);
+    }
+
+    /**
+     * 删除最后一个元素
+     * @return
+     */
+    public T removeLast() {
+        return remove(size - 1);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder info = new StringBuilder();
+        info.append("LinkedList: ");
+        Node currentNode = dummyhead.next;
+        while (currentNode != null) {
+            info.append(currentNode + " -> ");
+            currentNode = currentNode.next;
+        }
+        info.append("NULL");
+        return info.toString();
     }
 }
