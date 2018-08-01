@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="" />
+    <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/SolutionUseRecursion.java" afterPath="$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/SolutionUseRecursion.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/0.Array/target/" />
@@ -89,8 +91,8 @@
       <file leaf-file-name="SolutionUseRecursion.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/SolutionUseRecursion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="-66">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -685,7 +687,7 @@
       <workItem from="1532841669322" duration="7586000" />
       <workItem from="1532950638093" duration="8197000" />
       <workItem from="1533042885572" duration="9038000" />
-      <workItem from="1533135475438" duration="2178000" />
+      <workItem from="1533135475438" duration="2455000" />
     </task>
     <servers />
   </component>
@@ -722,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26999000" />
+    <option name="totallyTimeSpent" value="27276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1247,8 +1249,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/SolutionUseRecursion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="-66">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
         </state>
       </provider>

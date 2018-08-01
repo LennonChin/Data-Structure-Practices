@@ -20,15 +20,15 @@ public class SolutionUseRecursion {
         if (head == null) {
             return null;
         }
-        // 递归处理除头节点之后的子链表
-        ListNode result = removeElements(head.next, val);
-        if (head.val == val) {
-            // 如果头节点是被删除的节点，则直接返回递归处理后的结果链表
-            return result;
-        } else {
-            // 否则将头节点和递归处理后的结果链表拼在一起返回
-            head.next = result;
-            return head;
-        }
+        // 递归处理除头节点之后的子链表，并拼在head后面
+        head.next = removeElements(head.next, val);
+//        if (head.val == val) {
+//            // 如果头节点是被删除的节点，则直接返回递归处理后的子链表
+//            return head.next;
+//        } else {
+//            // 否则将头节点和递归处理后的结果链表一起返回
+//            return head;
+//        }
+        return head.val == val ? head.next : head;
     }
 }
