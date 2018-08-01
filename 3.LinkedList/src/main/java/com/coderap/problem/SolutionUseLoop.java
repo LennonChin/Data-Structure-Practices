@@ -13,7 +13,7 @@ package com.coderap.problem;
  * @author: Lennon Chin
  * @create: 2018/08/01 22:59:38
  */
-public class Solution {
+public class SolutionUseLoop {
 
     public ListNode removeElements(ListNode head, int val) {
         // 处理开头需要删除的节点
