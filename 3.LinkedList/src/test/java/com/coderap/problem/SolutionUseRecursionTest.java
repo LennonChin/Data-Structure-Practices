@@ -16,7 +16,7 @@ public class SolutionUseRecursionTest {
     @Test
     public void removeElements() throws Exception {
         System.out.println(listNode);
-        System.out.println(new SolutionUseRecursion().removeElements(listNode, 6));
+        System.out.println(new SolutionUseRecursion().removeElements(listNode, 6, 0));
     }
 
 }

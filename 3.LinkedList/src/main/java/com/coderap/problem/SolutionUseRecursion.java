@@ -15,20 +15,40 @@ package com.coderap.problem;
  */
 public class SolutionUseRecursion {
 
-    public ListNode removeElements(ListNode head, int val) {
+    public ListNode removeElements(ListNode head, int val, int depth) {
+
+        String depthString = generateDepthString(depth);
+        System.out.print(depthString);
+        System.out.println("Call: remove " + val + ", in " + head);
+
         // 对空链表直接返回空
         if (head == null) {
+            System.out.print(depthString);
+            System.out.println("Return: " + head);
             return null;
         }
         // 递归处理除头节点之后的子链表，并拼在head后面
-        head.next = removeElements(head.next, val);
-//        if (head.val == val) {
-//            // 如果头节点是被删除的节点，则直接返回递归处理后的子链表
-//            return head.next;
-//        } else {
-//            // 否则将头节点和递归处理后的结果链表一起返回
-//            return head;
-//        }
-        return head.val == val ? head.next : head;
+        ListNode result = removeElements(head.next, val, depth + 1);
+        System.out.print(depthString);
+        System.out.println("After remove: " + val + ", left: " + result);
+
+        ListNode returnNode;
+        if (head.val == val) {
+            returnNode = result;
+        } else  {
+            head.next = result;
+            returnNode = head;
+        }
+        System.out.print(depthString);
+        System.out.println("Return: " + returnNode);
+        return returnNode;
+    }
+
+    private String generateDepthString(int depth) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < depth; i++) {
+            result.append(" | ");
+        }
+        return result.toString();
     }
 }
