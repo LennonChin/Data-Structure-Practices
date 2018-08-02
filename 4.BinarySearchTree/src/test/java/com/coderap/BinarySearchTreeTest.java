@@ -20,7 +20,7 @@ public class BinarySearchTreeTest {
 
     @Test
     public void size() throws Exception {
-        Assert.assertEquals((long)binarySearchTree.size(), 9);
+        Assert.assertEquals((long) binarySearchTree.size(), 9);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class BinarySearchTreeTest {
     @Test
     public void add() throws Exception {
         binarySearchTree.add(10);
-        Assert.assertEquals((long)binarySearchTree.size(), 10);
+        Assert.assertEquals((long) binarySearchTree.size(), 10);
     }
 
     @Test
@@ -47,6 +47,11 @@ public class BinarySearchTreeTest {
     @Test
     public void inOrder() throws Exception {
         binarySearchTree.inOrder(); // 中序遍历的结果为元素从小到大排序的结果
+    }
+
+    @Test
+    public void postOrder() throws Exception {
+        binarySearchTree.postOrder(); // 后续遍历即先处理左右两个子节点，然后处理自己
     }
 
 }
