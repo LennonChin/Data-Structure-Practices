@@ -1,5 +1,7 @@
 package com.coderap;
 
+import java.util.Stack;
+
 /**
  * @program: Data-Structure-Practices
  * @description: 二分搜索树
@@ -125,6 +127,34 @@ public class BinarySearchTree<T extends Comparable<T>> {
         preOrder(node.left);
         // 遍历右子树
         preOrder(node.right);
+    }
+
+    /**
+     * 非递归前序遍历
+     * 一般做法需要借助栈，有如下几步：
+     * 1. 将根节点压入栈；
+     * 2. 如果栈不为空，弹出栈顶元素，进行访问；
+     * 3. 将弹出的栈顶元素的右节点压入栈；
+     * 4. 将弹出的栈顶元素的左节点压入栈；
+     * 5. 重复执行 2 ~ 4 步，直到栈为空。
+     */
+    public void preOrderWithoutRecursion() {
+
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            Node currentNode = stack.pop();
+            // 访问当前节点
+            System.out.println(currentNode.t);
+            // 将右节点压入栈
+            if (currentNode.right != null) {
+                stack.push(currentNode.right);
+            }
+            // 将左节点压入栈
+            if (currentNode.left != null) {
+                stack.push(currentNode.left);
+            }
+        }
     }
 
     /**
