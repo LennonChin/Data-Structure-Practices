@@ -1,0 +1,47 @@
+package com.coderap;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class BinarySearchTreeTest {
+
+    private BinarySearchTree<Integer> binarySearchTree;
+
+    @Before
+    public void init() {
+        binarySearchTree = new BinarySearchTree<>();
+        int[] nums = {4, 6, 2, 5, 3, 7, 1, 9, 8};
+        for (int num : nums) {
+            binarySearchTree.add(num);
+        }
+        System.out.println(binarySearchTree);
+    }
+
+    @Test
+    public void size() throws Exception {
+        Assert.assertEquals((long)binarySearchTree.size(), 9);
+    }
+
+    @Test
+    public void isEmpty() throws Exception {
+        Assert.assertEquals(binarySearchTree.isEmpty(), false);
+    }
+
+    @Test
+    public void add() throws Exception {
+        binarySearchTree.add(10);
+        Assert.assertEquals((long)binarySearchTree.size(), 10);
+    }
+
+    @Test
+    public void contains() throws Exception {
+        Assert.assertEquals(binarySearchTree.contains(2), true);
+    }
+
+    @Test
+    public void preOrder() throws Exception {
+        binarySearchTree.preOrder();
+    }
+
+}

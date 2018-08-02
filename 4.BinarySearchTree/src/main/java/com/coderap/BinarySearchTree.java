@@ -69,6 +69,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     /**
      * 查看二分搜索树中是否包含元素e
+     *
      * @param t
      * @return
      */
@@ -78,6 +79,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     /**
      * 查看以node为根的二分搜索树中是否包含元素e，递归算法
+     *
      * @param node
      * @param t
      * @return
@@ -98,5 +100,55 @@ public class BinarySearchTree<T extends Comparable<T>> {
             // 如果比node元素大，则去node的右子树查找
             return contains(node.right, t);
         }
+    }
+
+    /**
+     * 二分搜索树的前序遍历
+     */
+    public void preOrder() {
+        preOrder(root);
+    }
+
+    /**
+     * 前序遍历以node为根的二分搜索树，递归算法
+     *
+     * @param node
+     */
+    private void preOrder(Node node) {
+        if (node == null) {
+            // 节点为空，递归终止
+            return;
+        }
+        // 访问当前节点
+        System.out.println(node.t);
+        // 遍历左子树
+        preOrder(node.left);
+        // 遍历右子树
+        preOrder(node.right);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder info = new StringBuilder();
+        generateBSTString(root, 0, info);
+        return info.toString();
+    }
+
+    private void generateBSTString(Node node, int depth, StringBuilder info) {
+        if (node == null) {
+            info.append(generateDepthString(depth) + " NULL\n");
+            return;
+        }
+        info.append(generateDepthString(depth) + node.t + "\n");
+        generateBSTString(node.left, depth + 1, info);
+        generateBSTString(node.right, depth + 1, info);
+    }
+
+    private String generateDepthString(int depth) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < depth; i++) {
+            result.append("--");
+        }
+        return result.toString();
     }
 }
