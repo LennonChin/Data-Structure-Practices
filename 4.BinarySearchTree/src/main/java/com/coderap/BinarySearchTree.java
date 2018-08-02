@@ -127,6 +127,31 @@ public class BinarySearchTree<T extends Comparable<T>> {
         preOrder(node.right);
     }
 
+    /**
+     * 二分搜索树的中序遍历
+     */
+    public void inOrder() {
+        inOrder(root);
+    }
+
+    /**
+     * 中序遍历以node为根的二分搜索树，递归算法
+     *
+     * @param node
+     */
+    private void inOrder(Node node) {
+        if (node == null) {
+            // 节点为空，递归终止
+            return;
+        }
+        // 遍历左子树
+        inOrder(node.left);
+        // 访问当前节点
+        System.out.println(node.t);
+        // 遍历右子树
+        inOrder(node.right);
+    }
+
     @Override
     public String toString() {
         StringBuilder info = new StringBuilder();

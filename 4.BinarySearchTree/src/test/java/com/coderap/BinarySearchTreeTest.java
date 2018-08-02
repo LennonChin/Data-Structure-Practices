@@ -44,4 +44,9 @@ public class BinarySearchTreeTest {
         binarySearchTree.preOrder();
     }
 
+    @Test
+    public void inOrder() throws Exception {
+        binarySearchTree.inOrder(); // 中序遍历的结果为元素从小到大排序的结果
+    }
+
 }
