@@ -1,5 +1,7 @@
 package com.coderap;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -205,6 +207,33 @@ public class BinarySearchTree<T extends Comparable<T>> {
         postOrder(node.right);
         // 访问当前节点
         System.out.println(node.t);
+    }
+
+    /**
+     * 层序遍历（广度优先遍历），可以更快地查找到某个元素
+     * 一般做法需要借助队列，有如下几步：
+     * 1. 将根节点压入队列；
+     * 2. 如果队列不为空，队首元素出队，进行访问；
+     * 3. 将出队元素的左节点入队；
+     * 4. 将出队元素的右节点入队；
+     * 5. 重复执行 2 ~ 4 步，直到队列为空。
+     */
+    public void levelOrder() {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            Node currentNode = queue.remove();
+            // 访问节点
+            System.out.println(currentNode.t);
+            // 左节点入队
+            if (currentNode.left != null) {
+                queue.add(currentNode.left);
+            }
+            // 右节点入队
+            if (currentNode.right != null) {
+                queue.add(currentNode.right);
+            }
+        }
     }
 
     @Override

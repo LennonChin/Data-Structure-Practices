@@ -59,4 +59,9 @@ public class BinarySearchTreeTest {
         binarySearchTree.postOrder(); // 后续遍历即先处理左右两个子节点，然后处理自己
     }
 
+    @Test
+    public void levelOrder() throws Exception {
+        binarySearchTree.levelOrder();
+    }
+
 }
