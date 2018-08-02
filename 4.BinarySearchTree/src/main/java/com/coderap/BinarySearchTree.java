@@ -66,4 +66,37 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
         return node;
     }
+
+    /**
+     * 查看二分搜索树中是否包含元素e
+     * @param t
+     * @return
+     */
+    public boolean contains(T t) {
+        return contains(root, t);
+    }
+
+    /**
+     * 查看以node为根的二分搜索树中是否包含元素e，递归算法
+     * @param node
+     * @param t
+     * @return
+     */
+    private boolean contains(Node node, T t) {
+        // 如果node为空，表示没有
+        if (node == null) {
+            return false;
+        }
+
+        if (t.compareTo(node.t) == 0) {
+            // 如果相等，直接就找到了
+            return true;
+        } else if (t.compareTo(node.t) < 0) {
+            // 如果比node元素小，则去node的左子树查找
+            return contains(node.left, t);
+        } else {
+            // 如果比node元素大，则去node的右子树查找
+            return contains(node.right, t);
+        }
+    }
 }
