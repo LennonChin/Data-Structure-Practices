@@ -64,4 +64,16 @@ public class BinarySearchTreeTest {
         binarySearchTree.levelOrder();
     }
 
+    @Test
+    public void removeMin() throws Exception {
+        binarySearchTree.removeMin();
+        System.out.println(binarySearchTree);
+    }
+
+    @Test
+    public void removeMax() throws Exception {
+        binarySearchTree.removeMax();
+        System.out.println(binarySearchTree);
+    }
+
 }

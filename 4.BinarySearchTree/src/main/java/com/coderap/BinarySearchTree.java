@@ -236,6 +236,134 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
+    /**
+     * 寻找二分搜索树中最小元素
+     *
+     * @return
+     */
+    public T minimum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("Binary Search Tree is empty!");
+        }
+        return minimum(root).t;
+    }
+
+    /**
+     * 返回以node为根节点的二分搜索树的最小值所在的节点
+     * 实现方式为一直向左递归
+     *
+     * @param node
+     * @return
+     */
+    private Node minimum(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+        return minimum(node.left);
+    }
+
+    /**
+     * 寻找二分搜索树中最大元素
+     *
+     * @return
+     */
+    public T maximum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("Binary Search Tree is empty!");
+        }
+        return maximum(root).t;
+    }
+
+    /**
+     * 返回以node为根节点的二分搜索树的最大值所在的节点
+     * 实现方式为一直向右递归
+     *
+     * @param node
+     * @return
+     */
+    private Node maximum(Node node) {
+        if (node.right == null) {
+            return node;
+        }
+        return minimum(node.right);
+    }
+
+    /**
+     * 从二分搜索树中删除最小值所在的节点，返回最小值
+     *
+     * @return
+     */
+    public T removeMin() {
+        // 找到最小节点
+        T deletedNode = minimum();
+        // 将删除最小节点之后的树重新赋值给root
+        root = removeMin(root);
+        // 返回最小节点
+        return deletedNode;
+    }
+
+    /**
+     * 删掉以node为根的二分搜索树中的最小节点
+     * 返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @return
+     */
+    private Node removeMin(Node node) {
+        if (node.left == null) {
+            // 左节点为空，说明当前node即是最小节点
+            // 记录右节点
+            Node rightNode = node.right;
+            // 将当前节点的右节点置为空
+            node.right = null;
+            // 维护容量
+            size--;
+            // 返回记录的右节点的新子树
+            return rightNode;
+        }
+        // 否则继续查找左子树，将处理好的子树作为node的左节点
+        node.left = removeMin(node.left);
+        return node;
+    }
+
+    /**
+     * 从二分搜索树中删除最大值所在的节点，返回最大值
+     *
+     * @return
+     */
+    public T removeMax() {
+        // 找到最大节点
+        T deletedNode = maximum();
+        // 将删除最大节点之后的树重新赋值给root
+        root = removeMax(root);
+        // 返回最大节点
+        return deletedNode;
+    }
+
+    /**
+     * 删掉以node为根的二分搜索树中的最大节点
+     * 返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @return
+     */
+    private Node removeMax(Node node) {
+        if (node.right == null) {
+            // 右节点为空，说明当前node即是最大节点
+            // 记录左节点
+            Node leftNode = node.left;
+            // 将当前节点的左节点置为空
+            node.left = null;
+            // 维护容量
+            size--;
+            // 返回记录的左节点的新子树
+            return leftNode;
+        }
+        // 否则继续查找右子树，将处理好的子树作为node的右节点
+        node.right = removeMax(node.right);
+        return node;
+    }
+
     @Override
     public String toString() {
         StringBuilder info = new StringBuilder();
