@@ -37,12 +37,8 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
 
     public void add(T t) {
-        if (root == null) {
-            root = new Node(t);
-            size++;
-        } else {
-            add(root, t);
-        }
+        // 直接将插入完成的树赋值给root
+        root = add(root, t);
     }
 
     /**
@@ -50,31 +46,24 @@ public class BinarySearchTree<T extends Comparable<T>> {
      *
      * @param node
      * @param t
+     * @return 返回插入新节点后二分搜索树的根
      */
-    private void add(Node node, T t) {
-        if (t.equals(node.t)) {
-            // 已存在
-            return;
-        } else if (t.compareTo(node.t) < 0) {
-            // 往左子树插
-            if (node.left == null) {
-                // 如果左子树为空，新节点即为左子树
-                node.left = new Node(t);
-                size++;
-            } else {
-                // 如果左子树不为空，递归插入
-                add(node.left, t);
-            }
-        } else {
-            // 往右子树插
-            if (node.right == null) {
-                // 如果右子树为空，新节点即为右子树
-                node.right = new Node(t);
-                size++;
-            } else {
-                // 如果右子树不为空，递归插入
-                add(node.right, t);
-            }
+    private Node add(Node node, T t) {
+
+        if (node == null) {
+            // 如果node为空，说明t就应该是该node的值
+            size++;
+            return new Node(t);
         }
+
+        // 能运行到这里说明node不为空
+        if (t.compareTo(node.t) < 0) {
+            // 往左子树插，把插好的左子树直接重新赋值给左节点
+            node.left = add(node.left, t);
+        } else if (t.compareTo(node.t) > 0) {
+            // 往右子树插，把插好的右子树直接重新赋值给右节点
+            node.right = add(node.right, t);
+        }
+        return node;
     }
 }
