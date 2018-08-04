@@ -364,6 +364,70 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return node;
     }
 
+    public void remove(T t) {
+        root = remove(root, t);
+    }
+
+    /**
+     * 删除以node为根的二分搜索树中值为t的节点，递归算法
+     * 返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @param t
+     * @return
+     */
+    private Node remove(Node node, T t) {
+        if (node == null) {
+            return null;
+        }
+        if (t.compareTo(node.t) < 0) {
+            // 去左子树中删除
+            node.left = remove(node.left, t);
+            return node;
+        } else if (t.compareTo(node.t) > 0) {
+            // 去右子树中删除
+            node.right = remove(node.right, t);
+            return node;
+        } else {
+            // 表示当前节点就是要删除的节点
+            if (node.left == null) {
+                // 如果待删除节点左子树为空，就将右子树替代当前节点的位置即可
+                // 保存右子树
+                Node rightNode = node.right;
+                // 将当前节点右子树引用置为空
+                node.right = null;
+                size--;
+                // 返回右子树
+                return rightNode;
+            }
+            if (node.right == null) {
+                // 如果待删除节点右子树为空，就将左子树替代当前节点的位置即可
+                // 保存左子树
+                Node leftNode = node.left;
+                // 将当前节点左子树引用置为空
+                node.left = null;
+                size--;
+                // 返回左子树
+                return leftNode;
+            }
+            // 待删除节点左右子树都不为空
+            /**
+             * 找到比待删除节点大的最小节点作为替代节点，即待删除节点右子树的最小节点
+             * 也可以选找比待删除节点小的节点中的最大节点作为节点，即待删除节点左子树的最大节点
+             * 这里使用第一种方式
+             */
+            Node successor = minimum(node.right);
+            // 用这个替代节点顶替待删除节点的位置
+            // 将这个替代节点从待删除节点的右子树中删除，这里不用size--，因为removeMin中已删除了
+            successor.right = removeMin(node.right);
+            // 将待删除节点的左子树作为替代节点的左子树
+            successor.left = node.left;
+            // 手动置待删除节点的左右子树为空
+            node.left = node.right = null;
+            return successor;
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder info = new StringBuilder();
