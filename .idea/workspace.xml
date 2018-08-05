@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/0.Array/target/" />
@@ -83,11 +77,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedListMapTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkedListMapTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6.Map/src/test/java/com/coderap/impl/LinkedListMapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="164">
+              <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSTMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6.Map/src/main/java/com/coderap/impl/BSTMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+              <folding>
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#3822#3823#0" expanded="true" />
+                <element signature="e#3871#3872#0" expanded="true" />
+                <element signature="e#4313#4314#0" expanded="true" />
+                <element signature="e#4340#4341#0" expanded="true" />
+                <element signature="e#4386#4387#0" expanded="true" />
+                <element signature="e#4418#4419#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSTMapTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/6.Map/src/test/java/com/coderap/impl/BSTMapTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -99,8 +122,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -111,6 +134,7 @@
       <find>arrayQueue</find>
       <find>loopQueue</find>
       <find>bstSet</find>
+      <find>linkedListMap</find>
     </findStrings>
     <replaceStrings>
       <replace>loopQueue</replace>
@@ -119,6 +143,7 @@
       <replace>linkedListStack</replace>
       <replace>linkedListQueue</replace>
       <replace>linkedListSet</replace>
+      <replace>bstMap</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -180,6 +205,8 @@
         <option value="$PROJECT_DIR$/6.Map/src/main/java/com/coderap/Map.java" />
         <option value="$PROJECT_DIR$/6.Map/src/main/java/com/coderap/impl/LinkedListMap.java" />
         <option value="$PROJECT_DIR$/6.Map/src/test/java/com/coderap/impl/LinkedListMapTest.java" />
+        <option value="$PROJECT_DIR$/6.Map/src/test/java/com/coderap/impl/BSTMapTest.java" />
+        <option value="$PROJECT_DIR$/6.Map/src/main/java/com/coderap/impl/BSTMap.java" />
       </list>
     </option>
   </component>
@@ -343,6 +370,27 @@
             <path>
               <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data-Structure-Practices" type="462c0819:PsiDirectoryNode" />
+              <item name="6.Map" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="coderap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data-Structure-Practices" type="462c0819:PsiDirectoryNode" />
+              <item name="6.Map" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="coderap" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data-Structure-Practices" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -390,7 +438,57 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListMapTest">
+  <component name="RunManager" selected="JUnit.BSTMapTest">
+    <configuration name="BSTMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.coderap.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="6.Map" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.coderap.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.coderap.impl.BSTMapTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BSTMapTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.coderap.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="6.Map" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.coderap.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.coderap.impl.BSTMapTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="LinkedListMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -408,56 +506,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="LinkedListSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.coderap.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="5.Set" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.coderap.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.coderap.impl.LinkedListSetTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SetPerformaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.coderap.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="5.Set" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.coderap.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.coderap.impl.SetPerformaceTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-Xmx1024m -Xms1024m" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -598,19 +646,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedListSetTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testBSTSet" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testLinkedListSet" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedListMapTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testBSTSet" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testLinkedListSet" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListMapTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BSTMapTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BSTMapTest.remove" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LinkedListMapTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testBSTSet" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testLinkedListSet" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LinkedListSetTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BSTMapTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BSTMapTest.remove" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LinkedListMapTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testBSTSet" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SetPerformaceTest.testLinkedListSet" />
       </list>
     </recent_temporary>
   </component>
@@ -639,11 +687,23 @@
       <workItem from="1533211899130" duration="10233000" />
       <workItem from="1533225371644" duration="19000" />
       <workItem from="1533366796617" duration="1731000" />
-      <workItem from="1533468289240" duration="8301000" />
+      <workItem from="1533468289240" duration="9905000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="BSTMapTest - 2018.08.05 at 22h 59m 32s.xml">
+      <configuration name="BSTMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BSTMapTest - 2018.08.05 at 23h 02m 24s.xml">
+      <configuration name="BSTMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BSTMapTest - 2018.08.05 at 23h 02m 38s.xml">
+      <configuration name="BSTMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BSTMapTest_remove - 2018.08.05 at 23h 00m 04s.xml">
+      <configuration name="BSTMapTest.remove" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="LinkedListMapTest - 2018.08.05 at 22h 34m 01s.xml">
       <configuration name="LinkedListMapTest" configurationId="JUnit" />
     </history-entry>
@@ -652,15 +712,6 @@
     </history-entry>
     <history-entry file="LinkedListMapTest - 2018.08.05 at 22h 35m 59s.xml">
       <configuration name="LinkedListMapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SetPerformaceTest - 2018.08.05 at 21h 16m 04s.xml">
-      <configuration name="SetPerformaceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SetPerformaceTest - 2018.08.05 at 21h 27m 01s.xml">
-      <configuration name="SetPerformaceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SetPerformaceTest_testBSTSet - 2018.08.05 at 21h 27m 08s.xml">
-      <configuration name="SetPerformaceTest.testBSTSet" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SetPerformaceTest_testBSTSet - 2018.08.05 at 21h 33m 20s.xml">
       <configuration name="SetPerformaceTest.testBSTSet" configurationId="JUnit" />
@@ -671,12 +722,9 @@
     <history-entry file="SetPerformaceTest_testBSTSet - 2018.08.05 at 21h 33m 51s.xml">
       <configuration name="SetPerformaceTest.testBSTSet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetPerformaceTest_testLinkedListSet - 2018.08.05 at 21h 32m 55s.xml">
-      <configuration name="SetPerformaceTest.testLinkedListSet" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48188000" />
+    <option name="totallyTimeSpent" value="49792000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -703,14 +751,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4078478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.058263972" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08085612" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37931034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27942926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21781115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -732,7 +780,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -741,21 +789,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2.Queue/src/test/java/com/coderap/impl/QueuePerformanceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="61" column="10" lean-forward="false" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0.Array/src/test/java/com/coderap/ArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2800">
@@ -1169,8 +1202,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/6.Map/src/test/java/com/coderap/impl/LinkedListMapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        <state relative-caret-position="164">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.Map/src/main/java/com/coderap/impl/BSTMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+          <folding>
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3871#3872#0" expanded="true" />
+            <element signature="e#4313#4314#0" expanded="true" />
+            <element signature="e#4340#4341#0" expanded="true" />
+            <element signature="e#4386#4387#0" expanded="true" />
+            <element signature="e#4418#4419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.Map/src/test/java/com/coderap/impl/BSTMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding />
         </state>
       </provider>
