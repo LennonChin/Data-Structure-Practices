@@ -9,7 +9,7 @@ package com.coderap.problem;
 
 /**
  * @program: Data-Structure-Practices
- * @description:
+ * @description: LeetCode.com problem 203. https://leetcode.com/problems/remove-linked-list-elements/description/
  * @author: Lennon Chin
  * @create: 2018/08/01 22:59:38
  */
