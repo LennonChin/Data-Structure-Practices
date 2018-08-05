@@ -40,6 +40,7 @@ public class LinkedList<T> {
 
     /**
      * 获取链表中元素的个数
+     *
      * @return
      */
     public int getSize() {
@@ -48,6 +49,7 @@ public class LinkedList<T> {
 
     /**
      * 链表是否为空
+     *
      * @return
      */
     public boolean isEmpty() {
@@ -56,6 +58,7 @@ public class LinkedList<T> {
 
     /**
      * 在链表的索引位添加一个元素
+     *
      * @param index
      * @param e
      */
@@ -80,22 +83,25 @@ public class LinkedList<T> {
 
     /**
      * 添加元素到链表头
+     *
      * @param e
      */
     public void addFirst(T e) {
-        add(0 ,e);
+        add(0, e);
     }
 
     /**
      * 在链表尾添加元素
+     *
      * @param e
      */
     public void addLast(T e) {
-        add(size ,e);
+        add(size, e);
     }
 
     /**
      * 获取某索引位置的元素
+     *
      * @param index
      * @return
      */
@@ -112,6 +118,7 @@ public class LinkedList<T> {
 
     /**
      * 获取链表第一个元素
+     *
      * @return
      */
     public T getFirst() {
@@ -120,6 +127,7 @@ public class LinkedList<T> {
 
     /**
      * 获取链表最后一个元素
+     *
      * @return
      */
     public T getLast() {
@@ -128,6 +136,7 @@ public class LinkedList<T> {
 
     /**
      * 设置某个索引上的元素
+     *
      * @param index
      * @param e
      */
@@ -144,6 +153,7 @@ public class LinkedList<T> {
 
     /**
      * 查找链表中是否包含有元素e
+     *
      * @param e
      * @return
      */
@@ -161,6 +171,7 @@ public class LinkedList<T> {
 
     /**
      * 删除某个索引位上的元素
+     *
      * @param index
      * @return
      */
@@ -187,6 +198,7 @@ public class LinkedList<T> {
 
     /**
      * 删除第一个元素
+     *
      * @return
      */
     public T removeFirst() {
@@ -195,10 +207,33 @@ public class LinkedList<T> {
 
     /**
      * 删除最后一个元素
+     *
      * @return
      */
     public T removeLast() {
         return remove(size - 1);
+    }
+
+    /**
+     * 删除某个元素
+     *
+     * @param t
+     */
+    public void removeElement(T t) {
+
+        Node preNode = dummyhead;
+        while (preNode.next != null) {
+            if (preNode.next.e.equals(t))
+                break;
+            preNode = preNode.next;
+        }
+
+        if (preNode.next != null) {
+            Node deletedNode = preNode.next;
+            preNode.next = deletedNode.next;
+            deletedNode.next = null;
+            size--;
+        }
     }
 
     @Override
