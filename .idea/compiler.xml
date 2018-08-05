@@ -12,6 +12,7 @@
         <module name="3.LinkedList" />
         <module name="4.BinarySearchTree" />
         <module name="5.Set" />
+        <module name="6.Map" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="3.LinkedList" target="1.8" />
       <module name="4.BinarySearchTree" target="1.7" />
       <module name="5.Set" target="1.7" />
+      <module name="6.Map" target="1.7" />
       <module name="Data-Structure-Practices" target="1.8" />
     </bytecodeTargetLevel>
   </component>

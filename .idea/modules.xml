@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/3.LinkedList/3.LinkedList.iml" filepath="$PROJECT_DIR$/3.LinkedList/3.LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/4.BinarySearchTree/4.BinarySearchTree.iml" filepath="$PROJECT_DIR$/4.BinarySearchTree/4.BinarySearchTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/5.Set/5.Set.iml" filepath="$PROJECT_DIR$/5.Set/5.Set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.Map/6.Map.iml" filepath="$PROJECT_DIR$/6.Map/6.Map.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data-Structure-Practices.iml" filepath="$PROJECT_DIR$/Data-Structure-Practices.iml" />
     </modules>
   </component>
