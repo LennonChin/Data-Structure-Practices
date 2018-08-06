@@ -103,10 +103,11 @@ public class Array<T> {
 
     /**
      * 扩容
+     *
      * @param newCapacity
      */
     private void resize(int newCapacity) {
-        T[] newData = (T[])new Object[newCapacity];
+        T[] newData = (T[]) new Object[newCapacity];
         for (int i = 0; i < size; i++) {
             newData[i] = data[i];
         }
@@ -128,6 +129,7 @@ public class Array<T> {
 
     /**
      * 获取最后一个元素
+     *
      * @return
      */
     public T getLast() {
@@ -136,6 +138,7 @@ public class Array<T> {
 
     /**
      * 获取第一个元素
+     *
      * @return
      */
     public T getFirst() {
@@ -245,6 +248,22 @@ public class Array<T> {
         if (index != -1) {
             remove(index);
         }
+    }
+
+    /**
+     * 交换两个元素的位置
+     *
+     * @param i
+     * @param j
+     */
+    public void swap(int i, int j) {
+
+        if (i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("index is illegal");
+        }
+        T temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
     }
 
     @Override

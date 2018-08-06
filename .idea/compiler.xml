@@ -13,6 +13,7 @@
         <module name="4.BinarySearchTree" />
         <module name="5.Set" />
         <module name="6.Map" />
+        <module name="7.MaxHeap" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="4.BinarySearchTree" target="1.7" />
       <module name="5.Set" target="1.7" />
       <module name="6.Map" target="1.7" />
+      <module name="7.MaxHeap" target="1.7" />
       <module name="Data-Structure-Practices" target="1.8" />
     </bytecodeTargetLevel>
   </component>
