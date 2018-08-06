@@ -19,6 +19,23 @@ public class MaxHeap<T extends Comparable<T>> {
     }
 
     /**
+     * 具有heapify操作的构造方法
+     *
+     * @param array
+     */
+    public MaxHeap(T[] array) {
+
+        data = new Array<>(array);
+        /**
+         * 从最大的非叶子节点开始，往前对每个节点依次进行下沉操作
+         * 最大的非叶子节点即是最后一个节点的父节点
+         */
+        for (int i = parent(array.length - 1); i >= 0; i--) {
+            siftDown(i);
+        }
+    }
+
+    /**
      * 返回一共有多少个元素
      *
      * @return
@@ -166,5 +183,20 @@ public class MaxHeap<T extends Comparable<T>> {
             // 然后更新当前节点的索引值为交换后的索引值
             index = swapIndex;
         }
+    }
+
+    /**
+     * 进行替换操作，并返回堆顶元素
+     *
+     * @param t
+     * @return
+     */
+    public T replace(T t) {
+        T result = findMax();
+        // 将堆顶元素替换为新元素
+        data.set(0, t);
+        // 对堆顶元素进行下沉操作
+        siftDown(0);
+        return result;
     }
 }

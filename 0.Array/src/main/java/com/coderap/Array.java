@@ -24,6 +24,19 @@ public class Array<T> {
     }
 
     /**
+     * 根据传入的数组创建一个数组
+     *
+     * @param array
+     */
+    public Array(T[] array) {
+        data = (T[]) new Object[array.length];
+        for (int i = 0; i < array.length; i++) {
+            data[i] = array[i];
+        }
+        size = array.length;
+    }
+
+    /**
      * 默认构造，初始容量为10
      */
     public Array() {
