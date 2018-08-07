@@ -14,6 +14,7 @@
         <module name="5.Set" />
         <module name="6.Map" />
         <module name="7.MaxHeap" />
+        <module name="8.PriorityQueue" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="5.Set" target="1.7" />
       <module name="6.Map" target="1.7" />
       <module name="7.MaxHeap" target="1.7" />
+      <module name="8.PriorityQueue" target="1.7" />
       <module name="Data-Structure-Practices" target="1.8" />
     </bytecodeTargetLevel>
   </component>
