@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/6.Map/6.Map.iml" filepath="$PROJECT_DIR$/6.Map/6.Map.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.MaxHeap/7.MaxHeap.iml" filepath="$PROJECT_DIR$/7.MaxHeap/7.MaxHeap.iml" />
       <module fileurl="file://$PROJECT_DIR$/8.PriorityQueue/8.PriorityQueue.iml" filepath="$PROJECT_DIR$/8.PriorityQueue/8.PriorityQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9.SegmentTree/9.SegmentTree.iml" filepath="$PROJECT_DIR$/9.SegmentTree/9.SegmentTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data-Structure-Practices.iml" filepath="$PROJECT_DIR$/Data-Structure-Practices.iml" />
     </modules>
   </component>

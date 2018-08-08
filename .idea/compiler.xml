@@ -15,6 +15,7 @@
         <module name="6.Map" />
         <module name="7.MaxHeap" />
         <module name="8.PriorityQueue" />
+        <module name="9.SegmentTree" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,7 @@
       <module name="6.Map" target="1.7" />
       <module name="7.MaxHeap" target="1.7" />
       <module name="8.PriorityQueue" target="1.8" />
+      <module name="9.SegmentTree" target="1.7" />
       <module name="Data-Structure-Practices" target="1.8" />
     </bytecodeTargetLevel>
   </component>
