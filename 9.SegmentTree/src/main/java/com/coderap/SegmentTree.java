@@ -131,6 +131,53 @@ public class SegmentTree<T> {
         return merger.merge(leftQuery, rightQuery);
     }
 
+    /**
+     * 更新操作，将index位置的值更新为t
+     *
+     * @param index
+     * @param t
+     */
+    public void set(int index, T t) {
+        if (index < 0 || index >= data.length) {
+            throw new IllegalArgumentException("index is illegal");
+        }
+        data[index] = t;
+        set(0, 0, data.length - 1, index, t);
+    }
+
+    /**
+     * 在treeIndex为根的线段树的 [start, end] 的范围里更新Index位置的值为t
+     *
+     * @param treeIndex
+     * @param start
+     * @param end
+     * @param index
+     * @param t
+     */
+    private void set(int treeIndex, int start, int end, int index, T t) {
+        if (start == end) {
+            // 说明找到了相关的index，即为start == end
+            tree[treeIndex] = t;
+            return;
+        }
+
+        // 查询范围的中点
+        int middle = start + (end - start) / 2;
+        // 求出左右子树的根节点，即左右节点的索引
+        int leftTreeIndex = leftChild(treeIndex);
+        int rightTreeIndex = rightChild(treeIndex);
+
+        if (index >= middle + 1) {
+            // 说明在右子树
+            set(rightTreeIndex, middle + 1, end, index, t);
+        } else {
+            // 说明在左子树
+            set(leftTreeIndex, start, middle, index, t);
+        }
+        // 对treeIndex位置的数据进行更新
+        tree[treeIndex] = merger.merge(tree[leftTreeIndex], tree[rightTreeIndex]);
+    }
+
     @Override
     public String toString() {
         StringBuffer info = new StringBuffer();
