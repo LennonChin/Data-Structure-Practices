@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java" afterPath="$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,12 +50,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Trie.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Trie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+            <state relative-caret-position="558">
+              <caret line="59" column="9" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordDictionary.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/WordDictionary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-226">
+              <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+              <folding>
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1264#1265#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/ListNode.java" />
         <option value="$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseLoop.java" />
         <option value="$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseLoopTest.java" />
         <option value="$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseDummyHeadTest.java" />
@@ -153,6 +165,7 @@
         <option value="$PROJECT_DIR$/9.SegmentTree/src/main/java/com/coderap/SegmentTree.java" />
         <option value="$PROJECT_DIR$/10.Trie/pom.xml" />
         <option value="$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java" />
+        <option value="$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/WordDictionary.java" />
       </list>
     </option>
   </component>
@@ -333,7 +346,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="coderap" type="462c0819:PsiDirectoryNode" />
-              <item name="Trie" type="1a9f42e2:ClassTreeNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data-Structure-Practices" type="462c0819:PsiDirectoryNode" />
+              <item name="10.Trie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="coderap" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="WordDictionary" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
@@ -655,7 +680,7 @@
       <workItem from="1533645545776" duration="4512000" />
       <workItem from="1533735127145" duration="7917000" />
       <workItem from="1533913658616" duration="1891000" />
-      <workItem from="1533958081016" duration="1996000" />
+      <workItem from="1533958081016" duration="2790000" />
     </task>
     <servers />
   </component>
@@ -692,7 +717,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75171000" />
+    <option name="totallyTimeSpent" value="75965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,13 +782,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseLoopTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseRecursionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1110,9 +1128,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+        <state relative-caret-position="558">
+          <caret line="59" column="9" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/WordDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <folding>
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1264#1265#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
