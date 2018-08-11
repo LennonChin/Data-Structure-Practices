@@ -9,6 +9,7 @@
         <module name="0.Array" />
         <module name="1.Stack" />
         <module name="10.Trie" />
+        <module name="11.UnionFind" />
         <module name="2.Queue" />
         <module name="3.LinkedList" />
         <module name="4.BinarySearchTree" />
@@ -23,6 +24,7 @@
       <module name="0.Array" target="1.8" />
       <module name="1.Stack" target="1.8" />
       <module name="10.Trie" target="1.7" />
+      <module name="11.UnionFind" target="1.7" />
       <module name="2.Queue" target="1.8" />
       <module name="3.LinkedList" target="1.8" />
       <module name="4.BinarySearchTree" target="1.7" />
