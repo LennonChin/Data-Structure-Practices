@@ -8,20 +8,20 @@ import com.coderap.UnionFind;
  * @author: Lennon Chin
  * @create: 2018/08/11 19:07:47
  */
-public class UnionFindTreeOptimizeSizeImpl implements UnionFind {
+public class UnionFindTreeOptimizeRankImpl implements UnionFind {
     
     private int[] parent;
-    private int[] treesSize;
+    private int[] treesRank;
     
-    public UnionFindTreeOptimizeSizeImpl(int size) {
+    public UnionFindTreeOptimizeRankImpl(int size) {
         
         parent = new int[size];
-        // 记录每棵树的子节点数
-        treesSize = new int[size];
+        // 记录每棵树的高度
+        treesRank = new int[size];
         
         for (int i = 0; i < size; i++) {
             parent[i] = i;
-            treesSize[i] = 1;
+            treesRank[i] = 1;
         }
     }
     
@@ -42,14 +42,14 @@ public class UnionFindTreeOptimizeSizeImpl implements UnionFind {
         if (pRoot == qRoot) {
             return;
         }
-        if (treesSize[pRoot] < treesSize[qRoot]) {
+        if (treesRank[pRoot] < treesRank[qRoot]) {
             parent[pRoot] = qRoot;
-            // 更新树子节点数
-            treesSize[qRoot] += treesSize[pRoot];
-        } else {
+        } else if (treesRank[pRoot] > treesRank[qRoot]) {
             parent[qRoot] = pRoot;
-            // 更新树子节点数
-            treesSize[pRoot] += treesSize[qRoot];
+        } else {
+            // 两树等高时，合并后，作为父节点的那棵树高度需要 +1
+            parent[qRoot] = pRoot;
+            treesRank[pRoot] += 1;
         }
     }
     

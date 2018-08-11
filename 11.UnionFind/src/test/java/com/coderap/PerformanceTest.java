@@ -2,6 +2,7 @@ package com.coderap;
 
 import com.coderap.impl.UnionFindBasicImpl;
 import com.coderap.impl.UnionFindTreeImpl;
+import com.coderap.impl.UnionFindTreeOptimizeRankImpl;
 import com.coderap.impl.UnionFindTreeOptimizeSizeImpl;
 import org.junit.Test;
 
@@ -88,10 +89,34 @@ public class PerformanceTest {
         System.out.println("UnionFindTreeOptimizeSizeImpl cost: " + (endTime - startTime) / 1000000000.0 + " s.");
     }
     
+    public static void testTreeUnionFindOptimizeRankPerformance() {
+        
+        UnionFindTreeOptimizeRankImpl unionFindTreeOptimizeRank = new UnionFindTreeOptimizeRankImpl(size);
+        
+        long startTime = System.nanoTime();
+        
+        for (int i = 0; i < loopCount; i++) {
+            int p = random.nextInt(size);
+            int q = random.nextInt(size);
+            unionFindTreeOptimizeRank.unionElements(p, q);
+        }
+        
+        for (int i = 0; i < loopCount; i++) {
+            int p = random.nextInt(size);
+            int q = random.nextInt(size);
+            unionFindTreeOptimizeRank.isConnected(p, q);
+        }
+        
+        long endTime = System.nanoTime();
+        
+        System.out.println("UnionFindTreeOptimizeRankImpl cost: " + (endTime - startTime) / 1000000000.0 + " s.");
+    }
+    
     @Test
     public void testPerformance() {
         testBasicUnionFindPerformance();
         testTreeUnionFindPerformance();
         testTreeUnionFindOptimizeSizePerformance();
+        testTreeUnionFindOptimizeRankPerformance();
     }
 }
