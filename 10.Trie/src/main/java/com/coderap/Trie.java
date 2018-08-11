@@ -59,4 +59,23 @@ public class Trie {
             size++;
         }
     }
+
+    /**
+     * 查询Trie中是否包含某个单词
+     *
+     * @param word
+     * @return
+     */
+    public boolean contains(String word) {
+        Node currentNode = root;
+        for (int i = 0; i < word.length(); i++) {
+            // 循环每个字符
+            char character = word.charAt(i);
+            if (currentNode.next.get(character) == null) {
+                return false;
+            }
+            currentNode = currentNode.next.get(character);
+        }
+        return currentNode.isWord;
+    }
 }
