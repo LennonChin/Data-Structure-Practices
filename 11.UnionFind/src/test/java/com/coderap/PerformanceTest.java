@@ -1,9 +1,6 @@
 package com.coderap;
 
-import com.coderap.impl.UnionFindBasicImpl;
-import com.coderap.impl.UnionFindTreeImpl;
-import com.coderap.impl.UnionFindTreeOptimizeRankImpl;
-import com.coderap.impl.UnionFindTreeOptimizeSizeImpl;
+import com.coderap.impl.*;
 import org.junit.Test;
 
 import java.util.Random;
@@ -16,8 +13,8 @@ import java.util.Random;
  */
 public class PerformanceTest {
     
-    private static int size = 100000;
-    private static int loopCount = 100000;
+    private static int size = 10000000;
+    private static int loopCount = 10000000;
     private static Random random = new Random();
     
     public static void testBasicUnionFindPerformance() {
@@ -112,11 +109,59 @@ public class PerformanceTest {
         System.out.println("UnionFindTreeOptimizeRankImpl cost: " + (endTime - startTime) / 1000000000.0 + " s.");
     }
     
+    public static void testTreeUnionFindOptimizeRoutePerformance() {
+        
+        UnionFindTreeOptimizeRouteImpl unionFindTreeOptimizeRoute = new UnionFindTreeOptimizeRouteImpl(size);
+        
+        long startTime = System.nanoTime();
+        
+        for (int i = 0; i < loopCount; i++) {
+            int p = random.nextInt(size);
+            int q = random.nextInt(size);
+            unionFindTreeOptimizeRoute.unionElements(p, q);
+        }
+        
+        for (int i = 0; i < loopCount; i++) {
+            int p = random.nextInt(size);
+            int q = random.nextInt(size);
+            unionFindTreeOptimizeRoute.isConnected(p, q);
+        }
+        
+        long endTime = System.nanoTime();
+        
+        System.out.println("UnionFindTreeOptimizeRouteImpl cost: " + (endTime - startTime) / 1000000000.0 + " s.");
+    }
+    
+    public static void testTreeUnionFindOptimizeRoutesPerformance() {
+        
+        UnionFindTreeOptimizeRoutesImpl unionFindTreeOptimizeRoutes = new UnionFindTreeOptimizeRoutesImpl(size);
+        
+        long startTime = System.nanoTime();
+        
+        for (int i = 0; i < loopCount; i++) {
+            int p = random.nextInt(size);
+            int q = random.nextInt(size);
+            unionFindTreeOptimizeRoutes.unionElements(p, q);
+        }
+        
+        for (int i = 0; i < loopCount; i++) {
+            int p = random.nextInt(size);
+            int q = random.nextInt(size);
+            unionFindTreeOptimizeRoutes.isConnected(p, q);
+        }
+        
+        long endTime = System.nanoTime();
+        
+        System.out.println("UnionFindTreeOptimizeRoutesImpl cost: " + (endTime - startTime) / 1000000000.0 + " s.");
+    }
+    
     @Test
     public void testPerformance() {
         testBasicUnionFindPerformance();
         testTreeUnionFindPerformance();
         testTreeUnionFindOptimizeSizePerformance();
         testTreeUnionFindOptimizeRankPerformance();
+        testTreeUnionFindOptimizeRoutePerformance();
+        testTreeUnionFindOptimizeRoutesPerformance();
     }
 }
