@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/0.Array/target/" />
@@ -54,20 +52,33 @@
         <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="558">
-              <caret line="59" column="9" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
+              <caret line="59" column="9" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordDictionary.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordDictionary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/WordDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-226">
-              <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+            <state relative-caret-position="494">
+              <caret line="70" column="9" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="70" selection-end-column="9" />
               <folding>
                 <element signature="e#1231#1232#0" expanded="true" />
                 <element signature="e#1264#1265#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapSum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/MapSum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-750">
+              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+              <folding>
+                <element signature="e#1304#1305#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseLoop.java" />
         <option value="$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseLoopTest.java" />
         <option value="$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseDummyHeadTest.java" />
         <option value="$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseRecursionTest.java" />
@@ -166,6 +176,7 @@
         <option value="$PROJECT_DIR$/10.Trie/pom.xml" />
         <option value="$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java" />
         <option value="$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/WordDictionary.java" />
+        <option value="$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/MapSum.java" />
       </list>
     </option>
   </component>
@@ -353,18 +364,6 @@
               <item name="Data-Structure-Practices" type="462c0819:PsiDirectoryNode" />
               <item name="10.Trie" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="coderap" type="462c0819:PsiDirectoryNode" />
-              <item name="problem" type="462c0819:PsiDirectoryNode" />
-              <item name="WordDictionary" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Data-Structure-Practices" type="462c0819:PsiDirectoryNode" />
-              <item name="10.Trie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -394,7 +393,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="D:/Program Files/node-v6.11.1-win-x64/node" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -680,7 +679,7 @@
       <workItem from="1533645545776" duration="4512000" />
       <workItem from="1533735127145" duration="7917000" />
       <workItem from="1533913658616" duration="1891000" />
-      <workItem from="1533958081016" duration="2790000" />
+      <workItem from="1533958081016" duration="3901000" />
     </task>
     <servers />
   </component>
@@ -717,7 +716,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75965000" />
+    <option name="totallyTimeSpent" value="77076000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -737,7 +736,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13519314" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -782,13 +781,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/3.LinkedList/src/test/java/com/coderap/problem/SolutionUseRecursionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4.BinarySearchTree/src/test/java/com/coderap/BinarySearchTreeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1750">
@@ -1129,18 +1121,29 @@
     <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/Trie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
+          <caret line="59" column="9" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/WordDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
-          <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+        <state relative-caret-position="494">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="70" selection-end-column="9" />
           <folding>
             <element signature="e#1231#1232#0" expanded="true" />
             <element signature="e#1264#1265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.Trie/src/main/java/com/coderap/problem/MapSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
           </folding>
         </state>
       </provider>
