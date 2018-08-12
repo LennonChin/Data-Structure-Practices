@@ -103,6 +103,9 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
         if (balanceFactor > 1 && getBalanceFactor(node.left) >= 0) {
             // 说明不平衡且左边比较高，需要对当前节点右旋转
             return rightRotate(node);
+        } else if (balanceFactor < -1 && getBalanceFactor(node.right) <= 0) {
+            // 说明不平衡且右边比较高，需要对当前节点左旋转
+            return leftRotate(node);
         }
         return node;
     }
@@ -126,6 +129,31 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
         // 向右旋转的过程
         x.right = y;
         y.left = T3;
+        // 更新节点的height值
+        y.height = Math.max(getHeight(y.left), getHeight(y.right)) + 1;
+        x.height = Math.max(getHeight(x.left), getHeight(x.right)) + 1;
+        return x;
+    }
+    
+    /**
+     * 对节点y进行左旋转操作
+     * //      y                               x
+     * //     / \                            /  \
+     * //   T1   x      左旋转操作（y）       y     z
+     * //       / \   ---------------->   / \   / \
+     * //      T2  z                     T1 T2 T3 T4
+     * //         / \
+     * //       T3   T4
+     *
+     * @param y
+     * @return
+     */
+    private Node leftRotate(Node y) {
+        Node x = y.right;
+        Node T2 = x.left;
+        // 向左旋转的过程
+        x.left = y;
+        y.right = T2;
         // 更新节点的height值
         y.height = Math.max(getHeight(y.left), getHeight(y.right)) + 1;
         x.height = Math.max(getHeight(x.left), getHeight(x.right)) + 1;
