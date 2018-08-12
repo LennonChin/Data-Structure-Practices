@@ -206,23 +206,6 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
         }
     }
     
-    /**
-     * 删除以node为根的二分搜索树中最小的节点，返回删除节点后二分搜索树的根节点
-     *
-     * @param node
-     * @return
-     */
-    private Node removeMin(Node node) {
-        if (node.left == null) {
-            Node rightNode = node.right;
-            node.right = null;
-            size--;
-            return rightNode;
-        }
-        node.left = removeMin(node.left);
-        return node;
-    }
-    
     @Override
     public V remove(K key) {
         // 找到相应的要删除的节点
@@ -246,32 +229,74 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
             return null;
         }
         
+        Node resultNode;
         if (key.compareTo(node.key) < 0) {
             node.left = remove(node.left, key);
-            return node;
+            resultNode = node;
         } else if (key.compareTo(node.key) > 0) {
             node.right = remove(node.right, key);
-            return node;
+            resultNode = node;
         } else {
             if (node.left == null) {
                 Node rightNode = node.right;
                 node.right = null;
                 size--;
-                return rightNode;
-            }
-            if (node.right == null) {
+                resultNode = rightNode;
+            } else if (node.right == null) {
                 Node leftNode = node.left;
                 node.left = null;
                 size--;
-                return leftNode;
+                resultNode = leftNode;
+            } else {
+                // 左右子树都不为空的情况
+                Node successorNode = minimum(node.right);
+                successorNode.right = remove(node.right, successorNode.key);
+                successorNode.left = node.left;
+                
+                node.left = node.right = null;
+                resultNode = successorNode;
             }
-            Node successorNode = minimum(node.right);
-            successorNode.right = removeMin(node.right);
-            successorNode.left = node.left;
-            
-            node.left = node.right = null;
-            return successorNode;
         }
+    
+        // 删除节点后返回的树为空应该直接返回
+        if (resultNode == null) {
+            return null;
+        }
+        
+        // 更新resultNode的height
+        resultNode.height = 1 + Math.max(getHeight(resultNode.left), getHeight(resultNode.right));
+        // 更新平衡因子
+        int balanceFactor = getBalanceFactor(resultNode);
+        if (Math.abs(balanceFactor) > 1) {
+            // 不平衡，需要调整
+            System.out.println("unbalanced: " + balanceFactor);
+        }
+        // 平衡维护
+        // LL
+        if (balanceFactor > 1 && getBalanceFactor(resultNode.left) >= 0) {
+            // 说明不平衡且左边比较高，需要对当前节点右旋转
+            return rightRotate(resultNode);
+        }
+        // RR
+        if (balanceFactor < -1 && getBalanceFactor(resultNode.right) <= 0) {
+            // 说明不平衡且右边比较高，需要对当前节点左旋转
+            return leftRotate(resultNode);
+        }
+        // LR
+        if (balanceFactor > 1 && getBalanceFactor(resultNode.left) < 0) {
+            // 先对resultNode的左子树进行左旋转
+            resultNode.left = leftRotate(resultNode.left);
+            // 再对resultNode进行右旋转
+            return rightRotate(resultNode);
+        }
+        // RL
+        if (balanceFactor < -1 && getBalanceFactor(resultNode.right) > 0) {
+            // 先对resultNode的右子树进行右旋转
+            resultNode.right = rightRotate(resultNode.right);
+            // 再对resultNode进行左旋转
+            return leftRotate(node);
+        }
+        return resultNode;
     }
     
     @Override
