@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java" afterPath="$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/12.AVLTree/12.AVLTree.iml" afterPath="$PROJECT_DIR$/12.AVLTree/12.AVLTree.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/12.AVLTree/pom.xml" afterPath="$PROJECT_DIR$/12.AVLTree/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +47,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12.AVLTree/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="400">
+              <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -56,8 +57,8 @@
       <file leaf-file-name="AVLTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="260" column="28" lean-forward="false" selection-start-line="260" selection-start-column="28" selection-end-line="260" selection-end-column="28" />
+            <state relative-caret-position="1925">
+              <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#9516#9517#0" expanded="true" />
@@ -67,11 +68,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AVLTreeMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTreeMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AVLTreeSet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTreeSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-478">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AVLTreeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/12.AVLTree/src/test/java/com/coderap/AVLTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="250">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,8 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/SolutionUseDummyHead.java" />
-        <option value="$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/SolutionUseLoop.java" />
         <option value="$PROJECT_DIR$/3.LinkedList/src/main/java/com/coderap/problem/SolutionUseRecursion.java" />
         <option value="$PROJECT_DIR$/5.Set/src/main/java/com/coderap/problem/Solution.java" />
         <option value="$PROJECT_DIR$/6.Map/pom.xml" />
@@ -181,9 +230,11 @@
         <option value="$PROJECT_DIR$/11.UnionFind/src/main/java/com/coderap/impl/UnionFindTreeOptimizeRouteImpl.java" />
         <option value="$PROJECT_DIR$/11.UnionFind/src/main/java/com/coderap/impl/UnionFindTreeOptimizeRoutesImpl.java" />
         <option value="$PROJECT_DIR$/11.UnionFind/src/test/java/com/coderap/PerformanceTest.java" />
-        <option value="$PROJECT_DIR$/12.AVLTree/pom.xml" />
         <option value="$PROJECT_DIR$/12.AVLTree/src/test/java/com/coderap/AVLTreeTest.java" />
         <option value="$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java" />
+        <option value="$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTreeMap.java" />
+        <option value="$PROJECT_DIR$/12.AVLTree/pom.xml" />
+        <option value="$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTreeSet.java" />
       </list>
     </option>
   </component>
@@ -297,17 +348,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="coderap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Data-Structure-Practices" type="462c0819:PsiDirectoryNode" />
-              <item name="12.AVLTree" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="coderap" type="462c0819:PsiDirectoryNode" />
-              <item name="AVLTree" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Data-Structure-Practices" type="b2602c69:ProjectViewProjectNode" />
@@ -653,17 +693,11 @@
       <workItem from="1533735127145" duration="7917000" />
       <workItem from="1533913658616" duration="1891000" />
       <workItem from="1533958081016" duration="12362000" />
-      <workItem from="1534051048715" duration="8429000" />
+      <workItem from="1534051048715" duration="9341000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 13m 10s.xml">
-      <configuration name="AVLTreeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 14m 14s.xml">
-      <configuration name="AVLTreeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AVLTreeTest - 2018.08.12 at 16h 14m 39s.xml">
       <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
@@ -688,9 +722,15 @@
     <history-entry file="AVLTreeTest - 2018.08.12 at 16h 53m 58s.xml">
       <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AVLTreeTest - 2018.08.12 at 17h 08m 46s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AVLTreeTest - 2018.08.12 at 17h 09m 12s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93966000" />
+    <option name="totallyTimeSpent" value="94878000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -724,7 +764,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22116528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.274673" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26824033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -755,20 +795,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/5.Set/src/main/java/com/coderap/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6.Map/src/main/java/com/coderap/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/6.Map/src/main/java/com/coderap/impl/LinkedListMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -990,6 +1016,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,6 +1101,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,14 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="192" column="1" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="192" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12.AVLTree/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1103,8 +1123,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="260" column="28" lean-forward="false" selection-start-line="260" selection-start-column="28" selection-end-line="260" selection-end-column="28" />
+        <state relative-caret-position="1925">
+          <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#9516#9517#0" expanded="true" />
@@ -1113,10 +1133,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/12.AVLTree/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/12.AVLTree/src/test/java/com/coderap/AVLTreeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state relative-caret-position="250">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

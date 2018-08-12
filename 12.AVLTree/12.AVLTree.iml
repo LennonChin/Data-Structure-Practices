@@ -11,6 +11,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="6.Map" />
+    <orderEntry type="module" module-name="5.Set" />
+    <orderEntry type="module" module-name="3.LinkedList" />
+    <orderEntry type="module" module-name="4.BinarySearchTree" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
