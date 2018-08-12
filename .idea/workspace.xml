@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java" afterPath="$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/12.AVLTree/src/test/java/com/coderap/AVLTreeTest.java" afterPath="$PROJECT_DIR$/12.AVLTree/src/test/java/com/coderap/AVLTreeTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,12 +56,12 @@
       <file leaf-file-name="AVLTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1253">
-              <caret line="97" column="42" lean-forward="true" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
+            <state relative-caret-position="210">
+              <caret line="136" column="16" lean-forward="true" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7849#7850#0" expanded="true" />
-                <element signature="e#7888#7889#0" expanded="true" />
+                <element signature="e#8353#8354#0" expanded="true" />
+                <element signature="e#8392#8393#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +70,8 @@
       <file leaf-file-name="AVLTreeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/12.AVLTree/src/test/java/com/coderap/AVLTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1550">
-              <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+            <state relative-caret-position="385">
+              <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -652,14 +653,11 @@
       <workItem from="1533735127145" duration="7917000" />
       <workItem from="1533913658616" duration="1891000" />
       <workItem from="1533958081016" duration="12362000" />
-      <workItem from="1534051048715" duration="5022000" />
+      <workItem from="1534051048715" duration="6402000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AVLTreeTest - 2018.08.12 at 14h 38m 36s.xml">
-      <configuration name="AVLTreeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AVLTreeTest - 2018.08.12 at 14h 44m 36s.xml">
       <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
@@ -669,27 +667,30 @@
     <history-entry file="AVLTreeTest - 2018.08.12 at 14h 48m 38s.xml">
       <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PerformanceTest_testPerformance - 2018.08.11 at 20h 02m 06s.xml">
-      <configuration name="PerformanceTest.testPerformance" configurationId="JUnit" />
+    <history-entry file="AVLTreeTest - 2018.08.12 at 15h 50m 43s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PerformanceTest_testPerformance - 2018.08.11 at 20h 54m 16s.xml">
-      <configuration name="PerformanceTest.testPerformance" configurationId="JUnit" />
+    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 10m 18s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PerformanceTest_testPerformance - 2018.08.11 at 20h 54m 47s.xml">
-      <configuration name="PerformanceTest.testPerformance" configurationId="JUnit" />
+    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 13m 10s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PerformanceTest_testPerformance - 2018.08.11 at 21h 01m 45s.xml">
-      <configuration name="PerformanceTest.testPerformance" configurationId="JUnit" />
+    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 14m 14s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PerformanceTest_testPerformance - 2018.08.11 at 22h 58m 54s.xml">
-      <configuration name="PerformanceTest.testPerformance" configurationId="JUnit" />
+    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 14m 39s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SegmentTreeTest - 2018.08.08 at 22h 31m 39s.xml">
-      <configuration name="SegmentTreeTest" configurationId="JUnit" />
+    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 14m 50s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AVLTreeTest - 2018.08.12 at 16h 15m 06s.xml">
+      <configuration name="AVLTreeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90559000" />
+    <option name="totallyTimeSpent" value="91939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,7 +724,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10939358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41736028" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26824033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1102,8 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/12.AVLTree/src/test/java/com/coderap/AVLTreeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        <state relative-caret-position="385">
+          <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1112,12 +1113,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/12.AVLTree/src/main/java/com/coderap/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1253">
-          <caret line="97" column="42" lean-forward="true" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
+        <state relative-caret-position="210">
+          <caret line="136" column="16" lean-forward="true" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7849#7850#0" expanded="true" />
-            <element signature="e#7888#7889#0" expanded="true" />
+            <element signature="e#8353#8354#0" expanded="true" />
+            <element signature="e#8392#8393#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -59,8 +59,8 @@ public class AVLTreeTest {
     
     @After
     public void after() {
-        System.out.println(avlTree.isBST());
-        System.out.println(avlTree.isBalanced());
+        System.out.println("isBST: " + avlTree.isBST());
+        System.out.println("isBalanced: " + avlTree.isBalanced());
     }
     
 }

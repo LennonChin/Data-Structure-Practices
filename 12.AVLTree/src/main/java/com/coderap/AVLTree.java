@@ -100,11 +100,28 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
             System.out.println("unbalanced: " + balanceFactor);
         }
         // 平衡维护
+        // LL
         if (balanceFactor > 1 && getBalanceFactor(node.left) >= 0) {
             // 说明不平衡且左边比较高，需要对当前节点右旋转
             return rightRotate(node);
-        } else if (balanceFactor < -1 && getBalanceFactor(node.right) <= 0) {
+        }
+        // RR
+        if (balanceFactor < -1 && getBalanceFactor(node.right) <= 0) {
             // 说明不平衡且右边比较高，需要对当前节点左旋转
+            return leftRotate(node);
+        }
+        // LR
+        if (balanceFactor > 1 && getBalanceFactor(node.left) < 0) {
+            // 先对node的左子树进行左旋转
+            node.left = leftRotate(node.left);
+            // 再对node进行右旋转
+            return rightRotate(node);
+        }
+        // RL
+        if (balanceFactor < -1 && getBalanceFactor(node.right) > 0) {
+            // 先对node的右子树进行右旋转
+            node.right = rightRotate(node.right);
+            // 再对node进行左旋转
             return leftRotate(node);
         }
         return node;
@@ -124,7 +141,7 @@ public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
      * @return
      */
     private Node rightRotate(Node y) {
-        Node x = y.right;
+        Node x = y.left;
         Node T3 = x.right;
         // 向右旋转的过程
         x.right = y;
