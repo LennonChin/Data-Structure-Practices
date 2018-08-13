@@ -63,6 +63,40 @@ public class RedBlackTree<K extends Comparable<K>, V> {
         return x;
     }
     
+    /**
+     * 右旋转操作
+     * //      node                   x
+     * //      / \      右旋转        / \
+     * //    x   T2   ----------->  y  node
+     * //   / \                        / \
+     * //  y  T1                      T1 T2
+     *
+     * @param node
+     * @return
+     */
+    private Node rightRotate(Node node) {
+        Node x = node.left;
+        node.left = x.right;
+        x.right = node;
+        // 交换颜色
+        x.color = node.color;
+        // 设置node颜色为红色，表示node与x组成一个3节点
+        node.color = RED;
+        // 返回根节点
+        return x;
+    }
+    
+    /**
+     * 对以node为根的两个子节点进行颜色翻转
+     *
+     * @param node
+     */
+    private void flipColors(Node node) {
+        node.color = RED;
+        node.left.color = BLACK;
+        node.right.color = BLACK;
+    }
+    
     public void add(K key, V value) {
         root = add(root, key, value);
         // 保持根节点为黑色节点
