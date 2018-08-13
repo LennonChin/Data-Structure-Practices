@@ -40,8 +40,19 @@ public class RedBlackTree<K extends Comparable<K>, V> {
     }
     
     /**
-     * 左旋转操作
+     * 判断节点node的颜色
      *
+     * @param node
+     * @return
+     */
+    private boolean isRed(Node node) {
+        if (node == null)
+            return BLACK;
+        return node.color;
+    }
+    
+    /**
+     * 左旋转操作
      * //   node                   x
      * //   / \      左旋转        / \
      * // T1   x  -----------> node T3
@@ -114,6 +125,7 @@ public class RedBlackTree<K extends Comparable<K>, V> {
     private Node add(Node node, K key, V value) {
         if (node == null) {
             size++;
+            // 默认插入红色节点
             return new Node(key, value);
         }
         
@@ -124,6 +136,17 @@ public class RedBlackTree<K extends Comparable<K>, V> {
         } else {
             // 当key相等，表示需要修改
             node.value = value;
+        }
+        
+        // 维护旋转和翻转操作
+        if (isRed(node.right) && !isRed(node.left)) {
+            node = leftRotate(node);
+        }
+        if (isRed(node.left) && isRed(node.left.left)) {
+            node = rightRotate(node);
+        }
+        if (isRed(node.left) && isRed(node.right)) {
+            flipColors(node);
         }
         return node;
     }

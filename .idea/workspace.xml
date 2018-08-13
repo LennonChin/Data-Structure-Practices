@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb449767-0f83-473b-bcd4-5ae5233c3d77" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/13.RedBlackTree/src/main/java/com/coderap/RedBlackTree.java" afterPath="$PROJECT_DIR$/13.RedBlackTree/src/main/java/com/coderap/RedBlackTree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,8 +57,8 @@
       <file leaf-file-name="RedBlackTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/13.RedBlackTree/src/main/java/com/coderap/RedBlackTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-873">
-              <caret line="43" column="6" lean-forward="false" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+            <state relative-caret-position="-3750">
+              <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -609,7 +610,7 @@
       <workItem from="1533958081016" duration="12362000" />
       <workItem from="1534051048715" duration="9638000" />
       <workItem from="1534085235579" duration="2187000" />
-      <workItem from="1534161641245" duration="3400000" />
+      <workItem from="1534161641245" duration="3497000" />
     </task>
     <servers />
   </component>
@@ -646,7 +647,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100762000" />
+    <option name="totallyTimeSpent" value="100859000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1064,8 +1065,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/13.RedBlackTree/src/main/java/com/coderap/RedBlackTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-873">
-          <caret line="43" column="6" lean-forward="false" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="-3750">
+          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
           <folding />
         </state>
       </provider>
