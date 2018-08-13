@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/10.Trie/10.Trie.iml" filepath="$PROJECT_DIR$/10.Trie/10.Trie.iml" />
       <module fileurl="file://$PROJECT_DIR$/11.UnionFind/11.UnionFind.iml" filepath="$PROJECT_DIR$/11.UnionFind/11.UnionFind.iml" />
       <module fileurl="file://$PROJECT_DIR$/12.AVLTree/12.AVLTree.iml" filepath="$PROJECT_DIR$/12.AVLTree/12.AVLTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13.RedBlackTree/13.RedBlackTree.iml" filepath="$PROJECT_DIR$/13.RedBlackTree/13.RedBlackTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/2.Queue/2.Queue.iml" filepath="$PROJECT_DIR$/2.Queue/2.Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/3.LinkedList/3.LinkedList.iml" filepath="$PROJECT_DIR$/3.LinkedList/3.LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/4.BinarySearchTree/4.BinarySearchTree.iml" filepath="$PROJECT_DIR$/4.BinarySearchTree/4.BinarySearchTree.iml" />
