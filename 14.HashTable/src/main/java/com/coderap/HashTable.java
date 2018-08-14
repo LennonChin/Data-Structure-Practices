@@ -10,27 +10,26 @@ import java.util.TreeMap;
  */
 public class HashTable<K, V> {
     
+    // 素数表
+    private int[] capacities = {61, 83, 113, 151, 211, 281, 379, 509, 683, 911, 1217, 1627, 2179, 2909, 3881, 6907, 9209, 12281, 16381, 21841, 29123, 38833, 51787, 69061, 92083, 122777, 163729, 218357, 291143, 388211, 517619, 690163, 999983, 1226959, 1635947, 2181271, 2908361, 3877817, 5170427, 6893911, 9191891, 12255871, 16341163, 21788233, 29050993, 38734667, 51646229, 68861641, 91815541, 122420729, 163227661, 217636919, 290182597, 386910137, 515880193, 687840301, 917120411};
+    
     // 扩容上界和缩容下界
     private final static int upperTolerance = 31;
     private final static int lowerTolerance = 3;
     // 初始数组容量
-    private final static int defaultCapacity = 7;
+    private int defaultCapacityIndex = 0;
     
     private TreeMap<K, V>[] hashtable;
     private int M;
     private int size;
     
-    public HashTable(int M) {
-        this.M = M;
+    public HashTable() {
+        this.M = capacities[defaultCapacityIndex];
         size = 0;
         hashtable = new TreeMap[M];
         for (int i = 0; i < M; i++) {
             hashtable[i] = new TreeMap<>();
         }
-    }
-    
-    public HashTable() {
-        this(defaultCapacity);
     }
     
     /**
@@ -63,9 +62,10 @@ public class HashTable<K, V> {
             // 添加操作
             map.put(key, value);
             size++;
-            if (size >= upperTolerance * M) {
-                // 需要扩容，扩容一倍
-                resize(2 * M);
+            if (size >= upperTolerance * M && defaultCapacityIndex + 1 < capacities.length) {
+                // 需要扩容
+                defaultCapacityIndex++;
+                resize(capacities[defaultCapacityIndex]);
             }
         }
     }
@@ -74,9 +74,10 @@ public class HashTable<K, V> {
         TreeMap<K, V> map = hashtable[hash(key)];
         if (map.containsKey(key)) {
             size--;
-            if (size < lowerTolerance * M && M / 2 > defaultCapacity) {
+            if (size < lowerTolerance * M && defaultCapacityIndex - 1 >= 0) {
                 // 需要缩容
-                resize(M / 2);
+                defaultCapacityIndex--;
+                resize(capacities[defaultCapacityIndex]);
             }
             return map.remove(key);
         } else {
